@@ -55,7 +55,7 @@
                 aigestudio:wheel_curved="true"
                 android:layout_weight="1"
                 aigestudio:wheel_item_text_color="@color/btn_cancel_color"
-                aigestudio:wheel_item_text_size="20sp"
+                aigestudio:wheel_item_text_size="25sp"
                 aigestudio:wheel_selected_item_text_color="#536D8A" />
 
             <com.aigestudio.wheelpicker.WheelPicker
@@ -66,7 +66,7 @@
                 aigestudio:wheel_atmospheric="true"
                 aigestudio:wheel_curved="true"
                 aigestudio:wheel_item_text_color="@color/btn_cancel_color"
-                aigestudio:wheel_item_text_size="20sp"
+                aigestudio:wheel_item_text_size="25sp"
                 aigestudio:wheel_selected_item_text_color="#536D8A" />
 
         </LinearLayout>
