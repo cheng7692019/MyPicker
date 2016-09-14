@@ -78,7 +78,7 @@ public class ProvincePick extends PopupWindow implements WheelPicker.OnItemSelec
         private int colorCancel = Color.parseColor("#999999");
         private int colorConfirm = Color.parseColor("#303F9F");
         private int btnTextSize = 16;//text btnTextsize of cancel and confirm button
-        private int viewTextSize = 18;
+        private int viewTextSize = 25;
 
         public Builder setProvinceList(ArrayList<String> provinceList) {
             this.provinceList = provinceList;
@@ -193,8 +193,8 @@ public class ProvincePick extends PopupWindow implements WheelPicker.OnItemSelec
         cancelBtn.setTextSize(btnTextsize);
         confirmBtn.setTextColor(colorConfirm);
         confirmBtn.setTextSize(btnTextsize);
-        main_wheel_province.setItemTextSize(viewTextSize);
-        main_wheel_city.setItemTextSize(viewTextSize);
+        //main_wheel_province.setItemTextSize(viewTextSize);
+        //main_wheel_city.setItemTextSize(viewTextSize);
         cancelBtn.setOnClickListener(this);
         confirmBtn.setOnClickListener(this);
         contentView.setOnClickListener(this);

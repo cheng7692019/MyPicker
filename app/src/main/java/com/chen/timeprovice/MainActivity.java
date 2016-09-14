@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         city_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ProvincePick pickerPopWin = new ProvincePick.Builder(MainActivity.this,new ProvincePick.OnProCityPickedListener(){
+                ProvincePick provincePopWin = new ProvincePick.Builder(MainActivity.this,new ProvincePick.OnProCityPickedListener(){
                     @Override
                     public void onProCityPickCompleted(String province, String city, String dateDesc) {
                         Toast.makeText(MainActivity.this, dateDesc, Toast.LENGTH_SHORT).show();
@@ -96,14 +96,14 @@ public class MainActivity extends AppCompatActivity {
                 }).textConfirm("CONFIRM") //text of confirm button
                         .textCancel("CANCEL") //text of cancel button
                         .btnTextSize(16) // button text size
-                        .viewTextSize(18) // pick view text size
+                        .viewTextSize(25) // pick view text size
                         .colorCancel(Color.parseColor("#999999")) //color of cancel button
                         .colorConfirm(Color.parseColor("#009900"))//color of confirm button
                         .setProvinceList(provinceStrList) //min year in loop
                         .setCityList(cityStrList) // max year in loop
                         .dateChose("浙江省-宁波市") // date chose when init popwindow
                         .build();
-                pickerPopWin.showPopWin(MainActivity.this);
+                provincePopWin.showPopWin(MainActivity.this);
             }
         });
 
