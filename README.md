@@ -8,42 +8,74 @@
 
 时间的选择器的使用
   DatePick pickerPopWin = new DatePick.Builder(MainActivity.this, new DatePick.OnDatePickedListener() {
-                    @Override
-                    public void onDatePickCompleted(int year, int month, int day, String dateDesc) {
-                        Toast.makeText(MainActivity.this, dateDesc, Toast.LENGTH_SHORT).show();
-                    }
-                }).textConfirm("CONFIRM") //text of confirm button
-                        .textCancel("CANCEL") //text of cancel button
-                        .btnTextSize(16) // button text size
-                        .viewTextSize(25) // pick view text size
-                        .colorCancel(Color.parseColor("#999999")) //color of cancel button
-                        //.colorConfirm(getResources().getColor(R.color.colorAccent)//color of confirm button
-                        .colorConfirm(Color.parseColor("#009900"))//color of confirm button
-                        .minYear(1930) //min year in loop
-                        .maxYear(2020) // max year in loop
-                        .dateChose("2008-06-15") // date chose when init popwindow
-                        .build();
-                pickerPopWin.showPopWin(MainActivity.this);
-                
-  省市的选择器
   
-   ProvincePick provincePopWin = new ProvincePick.Builder(MainActivity.this,new ProvincePick.OnProCityPickedListener(){
-                    @Override
-                    public void onProCityPickCompleted(String province, String city, String dateDesc) {
-                        Toast.makeText(MainActivity.this, dateDesc, Toast.LENGTH_SHORT).show();
-                    }
-                }).textConfirm("CONFIRM") //text of confirm button
-                        .textCancel("CANCEL") //text of cancel button
-                        .btnTextSize(16) // button text size
-                        .viewTextSize(25) // pick view text size
-                        .colorCancel(Color.parseColor("#999999")) //color of cancel button
-                        .colorConfirm(Color.parseColor("#009900"))//color of confirm button
-                        .setProvinceList(provinceStrList) //min year in loop
-                        .setCityList(cityStrList) // max year in loop
-                        .dateChose("浙江省-宁波市") // date chose when init popwindow
-                        .build();
-                provincePopWin.showPopWin(MainActivity.this);
-                
+  @Override
+  
+  public void onDatePickCompleted(int year, int month, int day, String dateDesc) {
+  
+  Toast.makeText(MainActivity.this, dateDesc, Toast.LENGTH_SHORT).show();
+  
+  }
+  
+  }).textConfirm("CONFIRM") //text of confirm button
+  
+  .textCancel("CANCEL") //text of cancel button
+  
+  .btnTextSize(16) // button text size
+  
+  .viewTextSize(25) // pick view text size
+  
+  .colorCancel(Color.parseColor("#999999")) //color of cancel button
+  
+  //.colorConfirm(getResources().getColor(R.color.colorAccent)//color of confirm button
+  
+  .colorConfirm(Color.parseColor("#009900"))//color of confirm button
+  
+ .minYear(1930) //min year in loop
+ 
+ .maxYear(2020) // max year in loop
+ 
+ .dateChose("2008-06-15") // date chose when init popwindow
+ 
+ .build();
+ 
+  pickerPopWin.showPopWin(MainActivity.this);
+ 
+ 
+ 
+  省市的选择器
+ ProvincePick provincePopWin = new ProvincePick.Builder(MainActivity.this,new ProvincePick.OnProCityPickedListener(){
+ 
+  @Override
+
+  public void onProCityPickCompleted(String province, String city, String dateDesc) {
+  
+  Toast.makeText(MainActivity.this, dateDesc, Toast.LENGTH_SHORT).show();
+  
+  }
+  
+  }).textConfirm("CONFIRM") //text of confirm button
+  
+  .textCancel("CANCEL") //text of cancel button
+  
+  .btnTextSize(16) // button text size
+  
+  .viewTextSize(25) // pick view text size
+  
+  .colorCancel(Color.parseColor("#999999")) //color of cancel button
+  
+  .colorConfirm(Color.parseColor("#009900"))//color of confirm button
+ 
+  .setProvinceList(provinceStrList) //min year in loop
+  
+  .setCityList(cityStrList) // max year in loop
+  
+  .dateChose("浙江省-宁波市") // date chose when init popwindow
+
+ .build();
+ 
+  provincePopWin.showPopWin(MainActivity.this);
+ 
   目前只有2级联动，你也可以根据自己需要做到三级联动
   
 
