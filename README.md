@@ -6,7 +6,10 @@
 
 时间和日期都作了封装，使用方法如下
 
-时间的选择器的使用
+
+
+  时间的选择器的使用
+
   DatePick pickerPopWin = new DatePick.Builder(MainActivity.this, new DatePick.OnDatePickedListener() {
   
   @Override
@@ -43,7 +46,10 @@
  
  
  
+ 
   省市的选择器
+  
+  
  ProvincePick provincePopWin = new ProvincePick.Builder(MainActivity.this,new ProvincePick.OnProCityPickedListener(){
  
   @Override
